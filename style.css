@@ -25,6 +25,9 @@
     padding: 20px 0;
 }
 
+.pos-rel{
+    position: relative;
+}
 
 img{
     width: 100%;
@@ -41,6 +44,10 @@ img{
 
 .pad-t-30{
     padding-top: 30px;
+}
+
+.pad-t-b-30{
+    padding: 30px 0;
 }
 
 .d-flex{
@@ -83,12 +90,12 @@ img{
 }
 
 .container{
-    width: 85%;
+    padding: 0 40px;
     margin: 0 auto;
 }
 
 .inside-card-container{
-    width: 85%;
+    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -107,6 +114,10 @@ ul li{
 .card{
     border-radius: 25px;
     margin: 20px 0;
+}
+
+.nav-bar{
+    padding: 20px 30px;
 }
 
 .first-section .cards-container .card .card-content p{
@@ -136,6 +147,14 @@ ul li{
     background-color: var(--main-color);
 }
 
+
+
+
+/* 
+
+############# PLANNING SECTION #############
+
+*/
 
 .planning-section{
     padding: 80px 0;
@@ -175,13 +194,17 @@ ul li{
 }
 
 .anchor{
-    background-color: #9792e4;
+    background-color: var(--third-color);
     border-radius: 100%;
     padding: 20px;
 }
 
 
+/* 
 
+############# TESTIMONIAL SECTION #########
+
+*/
 
 
 .testimonials-section{
@@ -193,6 +216,22 @@ ul li{
     width: 250px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.testimonials-section .container h3{
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.testimonials-section .container h2{
+    color: var(--third-color);
+    font-size: 40px;
+}
+
+.testimonials-section .container p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 0 0 25px 0;
 }
 
 .testimonials-section .cards-container .card{
@@ -226,17 +265,20 @@ ul li{
 }
 
 
+/* 
 
+############ BENEFICT SECTION ###########
+
+*/
 
 
 .benefict-section{
-    background-color: #9792e4;
+    background-color: var(--third-color);
     padding: 50px 0;
 }
 
 .benefict-title{
     text-align: center;
-    padding: 30px 0;
     font-size: 40px;
     color: white;
 }
@@ -244,12 +286,10 @@ ul li{
 .cards-benefict{
     background-color: white;
 }
-.cards-benefict{
-    padding: 30px 0;
-}
+
 
 .cards-benefict h2,.cards-benefict h3{
-    color: #9792e4;
+    color: var(--third-color);
 }
 
 .cards-benefict h2{
@@ -270,6 +310,123 @@ ul li{
     flex-direction: column;
 }
 .benefict-link{
-    background-color: #9792e4;
+    background-color:var(--third-color);
 }
 
+/* 
+
+################# ABOUT US SECTION ###########
+
+*/
+
+
+
+.aboutus-section{
+    padding: 100px 0;
+}
+
+.aboutus-section .container p{
+    line-height: 2.5rem;
+}
+
+.aboutus-title{
+    color: var(--third-color);
+    font-size:50px;
+    padding-bottom: 50px;
+}
+
+.aboutus-section .container{
+    flex-direction: column;
+}
+
+.quote-marks{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    font-size: 100px;
+    color: var(--third-color);
+}
+
+
+.p-third-color{
+    color: var(--third-color);
+    line-height: 1.75rem;
+    font-size: 2rem;
+}
+
+
+.fa-linkedin{
+    font-size: 20px;
+}
+
+.aboutus-link{
+    background-color: var(--third-color);
+}
+
+
+/* ########### Get Started Section ######### */
+
+.get-started-section .container{
+    color: white;
+}
+
+.get-started-span{
+    letter-spacing: 3px;
+    font: 1.5rem;
+    font-weight: 100;
+    color: #eee;
+    padding: 20px 0;
+}
+
+.get-started-section .container h2{
+    color: rgb(226, 174, 77);
+    font-size: 60px;
+}
+
+.get-started-section .container h3{
+    padding: 20px 0;
+    font-size: 30px;
+}
+.get-started-section{
+    padding: 50px 0;
+    background-color: var(--third-color);
+}
+
+.get-started-section .container .btn-style{
+    color: var(--third-color);
+    background-color: white;
+    font-size: 20px;
+} 
+
+.copyright{
+    padding: 30px 0;
+    display: block;
+}
+
+.copyright a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* 
+
+########## Footer ########
+
+*/
+
+
+footer{
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
+.footer-container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.lower-footer{
+    padding: 70px 0 30px 0 ;
+}
