@@ -102,13 +102,25 @@ img{
 .logo img{
     height: 30px;
 }
-
-ul li{
+    
+.links ul li{
     list-style: none;
+    display: none;
+    color: white;
+    padding: 0 10px;
 }
 
-.links ul li{
-    display: none;
+.links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.links ul li:last-child a{
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: black;
 }
 
 .card{
@@ -117,7 +129,7 @@ ul li{
 }
 
 .nav-bar{
-    padding: 20px 30px;
+    padding: 20px 40px;
 }
 
 .first-section .cards-container .card .card-content p{
@@ -162,7 +174,7 @@ ul li{
 }
 
 .first-planning-container h2{
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     margin: 32px 0;
 }
@@ -212,8 +224,8 @@ ul li{
 }
 
 .card-image{
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -234,16 +246,10 @@ ul li{
     padding: 0 0 25px 0;
 }
 
-.testimonials-section .cards-container .card{
-    border-radius: 40px;
-    padding-bottom: 30px;
-    flex-direction: column;
-}
-
-.cards-testimonial p{
+ .testimonials-section .cards-container .cards-testimonial p{
     font-size: 1.25rem;
     color: white;
-    line-height: 1.75rem;
+    line-height: 2.5rem;
     padding: 25px 0;
 }
 
@@ -260,8 +266,15 @@ ul li{
     content: '\f10e';
 }
 
-.testimonials-section .cards.container{
+.testimonials-section .cards-container{
     flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-section .cards-container .card{
+    border-radius: 40px;
+    flex-direction: column;
+    text-align: center;
 }
 
 
@@ -319,7 +332,10 @@ ul li{
 
 */
 
-
+.card-image-container{
+    height: 200px;
+    width: 200px;
+}
 
 .aboutus-section{
     padding: 100px 0;
@@ -342,7 +358,7 @@ ul li{
 .quote-marks{
     position: absolute;
     top: 0;
-    left: 40%;
+    left:130px;
     font-size: 100px;
     color: var(--third-color);
 }
@@ -430,3 +446,123 @@ footer{
 .lower-footer{
     padding: 70px 0 30px 0 ;
 }
+
+
+/* 
+
+############### MEDIA QUERY ###################
+
+*/
+
+@media all and (min-width:768px) {
+
+    .nav-bar{
+        max-width: 738px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .container{
+        max-width: 738px;
+        padding: 0;
+    }
+    .cards-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .first-section .cards-container .card.first-card{
+        width: 65%;
+    }
+
+    .first-section .cards-container .card{
+        width: 30%;
+    }
+
+    .testimonials-section .cards-container .card{
+        flex-direction: row;
+        text-align: unset;
+    }
+
+    .benefict-section .cards-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .benefict-section .cards-container .card{
+        width: 48%;
+    }
+
+    .aboutus-section .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .aboutus-section .first-element{
+        width: 60%;
+    }
+
+    .aboutus-section .second-element{
+        width: 30%;
+    }
+
+
+}
+
+
+@media all and (min-width:992px) {
+    
+    .nav-bar{
+        margin: 0 auto;
+        max-width: 952px;
+        padding: 20px 0;
+    }
+
+    .container{
+        max-width: 952px;
+    }
+    .first-card{
+        flex-direction: row;
+    }
+
+    .planning-container{
+        flex-direction: row;
+    }
+
+    .benefict-section .cards-container .card{
+        width: 32%;
+    }
+
+    .first-planning-container p{
+        padding: 0;
+    }
+
+    .second-planning-container{
+        height: 50%;
+        align-self: flex-end;
+    }
+
+    .links ul li{
+        display: inline-block;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .get-started-section .container{
+        max-width: 700px;
+    }
+}
+
+@media all and (min-width:1200px){
+    .container{
+        max-width: 1150px;
+    }
+
+    .nav-bar{
+        max-width: 1150px;
+    }
+}
+
