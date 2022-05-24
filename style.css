@@ -23,6 +23,7 @@
 
 .nav-bar{
     padding: 20px 0;
+    justify-content: space-between;
 }
 
 .pos-rel{
@@ -42,6 +43,11 @@ img{
     letter-spacing:3px;
 }
 
+.first-type-btn{
+    background-color: var(--main-color);
+}
+
+
 .pad-t-30{
     padding-top: 30px;
 }
@@ -52,10 +58,6 @@ img{
 
 .d-flex{
     display: flex;
-}
-
-.f-jst-b{
-    justify-content: space-between;
 }
 
 .f-align-c{
@@ -102,6 +104,10 @@ img{
 .logo img{
     height: 30px;
 }
+
+.nav-bar{
+    padding: 20px 40px;
+}
     
 .links ul li{
     list-style: none;
@@ -123,13 +129,11 @@ img{
     color: black;
 }
 
+
+
 .card{
     border-radius: 25px;
     margin: 20px 0;
-}
-
-.nav-bar{
-    padding: 20px 40px;
 }
 
 .first-section .cards-container .card .card-content p{
@@ -155,13 +159,6 @@ img{
     color: var(--main-color);
 }
 
-.first-type-btn{
-    background-color: var(--main-color);
-}
-
-
-
-
 /* 
 
 ############# PLANNING SECTION #############
@@ -173,6 +170,10 @@ img{
     background-color:var(--third-color) ;
 }
 
+.first-image{
+    width: 90%;
+}
+ 
 .first-planning-container h2{
     font-size: 3rem;
     color: white;
@@ -453,7 +454,6 @@ footer{
 ############### MEDIA QUERY ###################
 
 */
-
 @media all and (min-width:768px) {
 
     .nav-bar{
@@ -502,6 +502,7 @@ footer{
     .aboutus-section .first-element{
         width: 60%;
     }
+
 
     .aboutus-section .second-element{
         width: 30%;
