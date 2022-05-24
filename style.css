@@ -283,10 +283,12 @@ img{
 }
 
 .cards-testimonial p::before{
-	content: "\F10ED";
+    font: var(--fa-font-solid);
+	content: "\f10d";
 }
 
 .cards-testimonial p::after{
+    font: var(--fa-font-solid);
     content: '\f10e';
 }
 
@@ -505,6 +507,10 @@ footer{
     .testimonials-section .cards-container .card{
         flex-direction: row;
         text-align: unset;
+    }
+
+    .testimonials-section .cards-container .cards-testimonial p{
+        padding:0 0 25px 0;
     }
 
     .benefict-section .cards-container{
